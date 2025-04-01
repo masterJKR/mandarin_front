@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.orange{ background: orange;}
+.pink{background: pink;}
+.gray{background: gray;}
+.red{background: red;}
+
+#con{
+    width:600px;
+    height:300px;
+    border:3px solid blue;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    /* flex-direction: column; */
+    justify-content: space-evenly; /* start, end, center , space- */
+    align-items: center; /* start, center, end  */
+}
+.item{
+    /* width:calc( 100% / 4 ); */
+    /* flex-grow: 1; */
+    width:45%;
+}
+.orange{
+    /* align-self: start;  교차축 방향으로만 배치 */
+    /* flex:1; */
+    flex-grow:1;
+    /* order:3; */
+}
+.pink{ flex-grow: 4; }
+.gray{flex-grow: 2;   }
+.red{flex-grow: 1; }
+
+    </style>
+</head>
+<body>
+    
+    <div id="con">
+        <div class="item orange">뽀로로</div>
+        <b class="item pink">루피</b>
+        <i class="item gray">포비</i>
+        <div class="item red">뚜뚜</div>
+    </div>
+
+</body>
+</html>
